@@ -7,9 +7,9 @@ const NavBar = () => {
     <div>
         <AppBar  style={{background:"lightgreen"}}>
             <Toolbar>
-                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} align='justify'><Link to='/' style={{textDecoration:'none',color:'ButtonHighlight'}}>Blog</Link></Typography>
-                <Button variant="contained" color='warning'><Link to="/Home" style={{textDecoration:'none', color:'white'}}>Home</Link></Button>&nbsp;
-                <Button variant="contained" color='warning'>Add</Button>
+                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} align='justify'><Link to='/Open' style={{textDecoration:'none',color:'ButtonHighlight'}}>Blog</Link></Typography>
+                <Button variant="contained" color='warning'><Link to="/Home" style={{textDecoration:'none', color:'white'}}>DashBoard</Link></Button>&nbsp;
+                <Button variant="contained" color='warning'><Link to="/AddBlog" style={{textDecoration:'none',color:'white'}}>Add</Link></Button>
             </Toolbar>
         </AppBar>
 

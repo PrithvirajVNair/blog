@@ -24,16 +24,15 @@ const Home= () => {
             <Table>
                 <TableHead>           
                 <TableRow>
-                  <br/> <br/>
-                  <TableCell style= {{color:'blue',fontFamily:'cursive', fontSize:'20px' }}> ID</TableCell> 
+                  <TableCell style= {{color:'blue',fontFamily:'cursive', fontSize:'20px' }}> ID</TableCell> &nbsp;
                   <TableCell style= {{color:'red',fontFamily:'cursive', fontSize:'20px' }}> Title</TableCell>
               </TableRow>
                 </TableHead>
                 <TableBody>
-                    {blogs.map((blog) => (
-                    <TableRow key={blog.id}>
-                    <TableCell>{blog.id}</TableCell>
-                    <TableCell>{blog.title}</TableCell>
+                    {blogs.map((val,index) => (
+                    <TableRow key={val.id}>
+                    <TableCell>{val.id}</TableCell>&nbsp;
+                    <TableCell>{val.title}</TableCell>
                     </TableRow>
                    ))}
                 </TableBody>
